@@ -1,0 +1,106 @@
+body{
+   background-color: rgb(4, 4, 34);
+   margin: 0;
+   padding: 0;
+}
+*{
+   box-sizing: border-box;
+   font-family: sans-serif;
+}
+
+.quiz_wrapper{
+   height: 500px;
+   width: 700px;
+   background-color: white;
+   margin: 30px auto;
+   border-radius: 8px;
+   padding: 25px;
+}
+
+.quiz_wrapper .questions{
+   padding: 15px;
+   background-color: rgb(252, 196, 10);
+   border-radius: 8px;
+   color: #ffffff;
+   font-size: 20px;
+   float: left;
+   width: 100%;
+}
+.quiz_wrapper .options{
+   float: left;
+   width: 100%;
+
+}
+.quiz_wrapper .options ul{
+   list-style: none;
+   padding: 0px;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+.quiz_wrapper .options ul li{
+   display: inline-block;
+   background-color: rgb(72, 72, 235);
+   width: 47%;
+   padding: 15px;
+   border-radius: 8px;
+   box-shadow: 0px 3px 0px gray;
+   margin-top: 15px;
+   color: #ffffff;
+   cursor: pointer;
+   font-size: 15px;
+   outline: none;
+}
+.quiz_wrapper .options ul li:active{
+box-shadow: 0px 0px 0px gray;
+}
+.quiz_wrapper .options ul li.correct{
+background-color: rgb(17, 63, 17);
+}
+.quiz_wrapper .options ul li.wrong{
+   background-color: rgb(202, 15, 15);
+}
+
+.quiz_wrapper .score{
+   float: left;
+   width: 100%;
+   padding: 25px 0px;
+}
+.quiz_wrapper .score .next{
+   width: 40%;
+   float: left;
+}
+.quiz_wrapper .score .next button{
+   padding: 15px 70px;
+   color: cornsilk;
+   background-color: cornflowerblue;
+   border: none;
+   border-radius: 8px;
+   font-style: 18px;
+   cursor: pointer;
+   box-shadow: 0px 3px 0px rgb(28, 28, 51);
+   outline: none;
+}
+.quiz_wrapper .score .next button:active{
+   box-shadow: 0px 0px 0px transparent;
+}
+
+.quiz_wrapper .score .score-card{
+   width: 60%;
+   float: left;
+   font-size: 20px;
+   color: black;
+   line-height: 50px;
+   text-transform: uppercase;
+}
+.quiz_wrapper .score .score-card span{
+background-color: rgb(145, 115, 18);
+padding: 5px 20px;
+border-radius: 8px;
+color: #ffffff;
+}
+
+
+
+
+
